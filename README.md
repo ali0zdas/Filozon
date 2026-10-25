@@ -1,118 +1,114 @@
-# 🛒 Filozon - E-Ticaret & Bulut Depolama Uygulaması
+# 🛒 Filozon - E-Commerce & Cloud Storage
 
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
-[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
-[![GetX](https://img.shields.io/badge/State%20Management-GetX-8A2BE2?style=for-the-badge)](https://pub.dev/packages/get)
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Web-brightgreen?style=for-the-badge)]()
+<p align="center">
+  <a href="README.md">🇬🇧 English</a> • 
+  <a href="README.tr.md">🇹🇷 Türkçe</a>
+</p>
 
-**Filozon**, modern e-ticaret deneyimi ile bulut dosya depolama/görüntüleme servislerini tek bir çatıda buluşturan, Flutter ve Firebase altyapısıyla geliştirilmiş kapsamlı ve hibrit (Android & Web) bir mobil/web uygulamasıdır.
-
----
-
-## 🚀 Öne Çıkan Özellikler
-
-### 🛍️ 1. E-Ticaret & Alışveriş Deneyimi
-- **Kategori & Ürün Yönetimi:** Firebase Cloud Firestore ve FakeStore API entegrasyonu ile zengin ürün kataloğu.
-- **Detaylı Ürün Sayfası:** Ürün fotoğrafları, açıklamalar, fiyatlandırma ve stok bilgisi.
-- **Sepet & Favoriler:** Anlık durum yönetimi (GetX) ile sepete ekleme, adet güncelleme, sepet tutarı hesaplama ve favorilere kaydetme.
-- **Sipariş & Adres Yönetimi:** Birden fazla teslimat adresi tanımlama, sipariş oluşturma ve geçmiş siparişlerin durumlarını listeleme.
-- **Ödeme Adımları:** Kredi kartı arayüzü, form doğrulama ve güvenli ödeme simülasyonu.
-
-### ☁️ 2. Filozon Cloud (Kişisel Bulut Depolama)
-- **Çoklu Dosya Formatı:** Fotoğraf, video ve PDF belgelerini Firebase Storage'a yükleme ve yönetme.
-- **Dahili Önizleyiciler:**
-  - 📄 PDF Görüntüleyici
-  - 🖼️ Fotoğraf Görüntüleyici
-  - 🎥 Video Oynatıcı
-- **Hibrit Yükleme Desteği:** Android üzerinde yerel dosya yolu (`putFile`), Web üzerinde ise bellek tamponu (`putData` / `Uint8List`) ile yüksek performanslı dosya transferi.
-
-### 🛡️ 3. Yönetici (Admin) Kontrol Paneli
-- **Dashboard & İstatistikler:** Toplam satışlar, aktif kullanıcılar ve sipariş istatistikleri.
-- **Ürün & Kategori Yönetimi:** Yeni ürün/kategori oluşturma, düzenleme, stok ve resim güncelleme.
-- **Sipariş Takibi:** Gelen siparişlerin durumlarını onaylama, kargolama ve tamamlama.
-- **Kullanıcı Yönetimi:** Kayıtlı kullanıcıları inceleme ve rol bazlı erişim denetimi.
-- **Middleware Koruması:** Yetkisiz erişimleri engelleyen GetX tabanlı `AdminMiddleware`.
-
-### 👤 4. Kullanıcı & Güvenlik
-- Firebase Authentication ile E-Posta / Şifre kayıt ve giriş akışı.
-- Misafir Kullanıcı (Guest Mode) modu ile üye olmadan ürünleri inceleme imkânı.
-- Profil bilgileri ve avatar güncelleme desteği.
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+  <img src="https://img.shields.io/badge/GetX-8A2BE2?style=for-the-badge" alt="GetX" />
+  <img src="https://img.shields.io/badge/UI-Glassmorphism-00C4B4?style=for-the-badge" alt="Glassmorphism" />
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20Web-brightgreen?style=for-the-badge" alt="Platform" />
+</p>
 
 ---
 
-## 🏗️ Mimari ve Teknolojiler
+> ℹ️ **Note:** This repository was developed as an **internship project** for educational and portfolio demonstration purposes.
 
-- **Çatı (Framework):** Flutter (3.x) & Dart (3.x)
-- **Durum Yönetimi (State Management) & Rotalar:** [GetX](https://pub.dev/packages/get)
-- **Veritabanı & Backend Servisleri:**
-  - **Firebase Authentication:** Kimlik doğrulama
-  - **Cloud Firestore:** NoSQL veri saklama ve gerçek zamanlı senkronizasyon
-  - **Firebase Storage:** Dosya ve medya saklama alanı
-- **Ağ & API:** `http` paketi ile RESTful FakeStore API entegrasyonu
-- **Tasarım & UI:** Material 3, Custom Drawer, Onboarding ekranları, Google Fonts (Kanit)
+**Filozon** is a hybrid cross-platform mobile and web application built with **Flutter** and **Firebase**. It merges a full-featured modern e-commerce shopping experience with a personal cloud file storage and viewer system—packaged in a sleek, frosted **Glassmorphism UI** aesthetic.
 
 ---
 
-## 📁 Proje Dizin Yapısı
+## 📸 Screenshots
+
+| Sign In (Glassmorphic Card) | Sign Up (Glassmorphic Card) |
+| :---: | :---: |
+| <img src="screenshots/signinfilozon.png" width="380" alt="Sign In Screen"/> | <img src="screenshots/signupfilozon.png" width="380" alt="Sign Up Screen"/> |
+
+| Admin Dashboard | Payment & Card View |
+| :---: | :---: |
+| <img src="screenshots/adminfilozon.png" width="380" alt="Admin Panel"/> | <img src="screenshots/filozoncard.png" width="380" alt="Payment & Credit Card"/> |
+
+---
+
+## ✨ Design Philosophy: Glassmorphism UI
+
+Filozon stands out with its modern **Glassmorphism** visual language crafted across both mobile and web interfaces:
+
+- **Frosted Glass Containers:** Translucent surfaces layered above vibrant gradient backdrops (`GlassmorphicContainer`).
+- **Real-Time Blur Effects:** Gaussian blur and dynamic backdrop filtering for optical depth and modern elegance.
+- **Subtle Highlights & Borders:** Fine-tuned translucent borders and diffused shadow layers that give cards and modal sheets a floating look.
+- **Modern Typography:** Styled with Google Fonts **Kanit** and tailored Material 3 design elements.
+
+---
+
+## 🚀 Key Features
+
+### 🛍️ 1. E-Commerce & Shopping Experience
+- **Catalog & Categories:** Dynamic catalog powered by Firebase Cloud Firestore and FakeStore REST API.
+- **Detailed Product Showcase:** High-resolution product images, descriptions, pricing, and live inventory state.
+- **Cart & Wishlist:** Real-time state management using GetX for instant cart additions, item count changes, and price totals.
+- **Address & Order Management:** Multi-address management, complete checkout flow, and past order status tracking.
+- **Checkout & Card Interface:** Interactive credit card visualizer, form validation, and checkout simulation.
+
+### ☁️ 2. Filozon Cloud (Personal Cloud Storage)
+- **Multi-Format Storage:** Securely upload and organize photos, videos, and PDF documents via Firebase Storage.
+- **Integrated Viewers:**
+  - 📄 Built-in PDF reader
+  - 🖼️ In-app photo gallery viewer
+  - 🎥 Video player
+- **Hybrid Cross-Platform Uploads:** Optimized file uploads using local paths (`putFile`) on Android and in-memory byte buffers (`putData` / `Uint8List`) on Flutter Web.
+
+### 🛡️ 3. Admin Control Panel
+- **Metrics Dashboard:** Real-time metrics tracking total sales, active users, and incoming orders.
+- **Inventory & Category CRUD:** Add, update, stock manage, or remove products and categories directly from the admin UI.
+- **Order Tracking:** Update lifecycle states of orders (Pending, Shipped, Delivered).
+- **User Role Management:** View registered users with role-based access controls.
+- **Route Protection:** Route-level security with GetX `AdminMiddleware` preventing unauthorized access.
+
+### 👤 4. Authentication & Security
+- **Firebase Authentication:** Email & password registration and login flows.
+- **Guest Browsing:** Allows exploratory catalog browsing without requiring an immediate account.
+- **User Profile:** Manage shipping addresses, personal details, and avatar preferences.
+
+---
+
+## 🏗️ Architecture & Tech Stack
+
+- **Framework:** Flutter & Dart
+- **State Management & Navigation:** [GetX](https://pub.dev/packages/get) (Reactive State, Dependency Injection, Route Middlewares)
+- **UI & Styling:** Glassmorphism (`glassmorphism`), Material 3, Google Fonts (`google_fonts`)
+- **Backend & Cloud Services (Firebase):**
+  - **Firebase Authentication:** User identity & session management
+  - **Cloud Firestore:** Real-time NoSQL database
+  - **Firebase Storage:** Cloud storage for user media and files
+- **Networking:** `http` package for RESTful FakeStore API integration
+
+---
+
+## 📁 Project Structure
 
 ```text
 lib/
 ├── app/
-│   ├── bindings/             # GetX Dependency Injection bağımlılık tanımları
-│   ├── controllers/          # İş mantığı ve reaktif GetX Controller sınıfları
-│   ├── middlewares/          # Rota ve rol güvenlik kontrolleri (Admin vb.)
-│   ├── models/               # Firestore ve API veri modelleri (JSON serialization)
-│   ├── routes/               # Sayfa rotaları ve navigasyon haritası (AppPages, AppRoutes)
-│   ├── services/             # Firebase, Auth, Firestore ve harici API servisleri
+│   ├── bindings/             # GetX Dependency Injection definitions
+│   ├── controllers/          # Business logic & reactive GetX Controllers
+│   ├── middlewares/          # Route & role authentication guards (AdminMiddleware, etc.)
+│   ├── models/               # Data models & JSON serialization
+│   ├── routes/               # Navigation routes and page bindings (AppPages, AppRoutes)
+│   ├── services/             # Firebase, Auth, Firestore, and external API services
 │   └── ui/
-│       ├── pages/            # Ekranlar (Home, Admin, Cloud, Payment, Login, vb.)
-│       └── widgets/          # Yeniden kullanılabilir arayüz bileşenleri
-├── firebase_options.dart     # Firebase platform yapılandırması
-└── main.dart                 # Uygulama başlangıç noktası (Initialization & Theme)
+│       ├── pages/            # Screens (Home, Admin, Cloud, Payment, Login, etc.)
+│       └── widgets/          # Reusable UI components & custom widgets
+├── firebase_options.dart     # Firebase platform configuration
+└── main.dart                 # Application entry point (Init & Theming)
 ```
 
 ---
 
-## ⚙️ Kurulum ve Başlangıç
+## 📄 License & Disclaimer
 
-### Gereksinimler
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) (>= 3.0.0)
-- [Dart SDK](https://dart.dev/get-dart)
-- Android Studio / VS Code & Flutter Eklentileri
-- Geçerli bir Firebase Projesi
-
-### Adımlar
-
-1. **Depoyu Klonlayın:**
-   ```bash
-   git clone <REPO_URL>
-   cd filozon_kodfu
-   ```
-
-2. **Bağımlılıkları Yükleyin:**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Firebase Yapılandırması:**
-   - Kendi Firebase projenizi yapılandırmak için FlutterFire CLI kullanabilir veya `android/app/google-services.json` dosyasını kendi projenizle eşleştirebilirsiniz:
-     ```bash
-     flutterfire configure
-     ```
-
-4. **Uygulamayı Başlatın:**
-   - **Android:**
-     ```bash
-     flutter run -d android
-     ```
-   - **Web (Chrome):**
-     ```bash
-     flutter run -d chrome
-     ```
-
----
-
-## 📄 Lisans
-
-Bu proje eğitim ve portfolyo amaçlı geliştirilmiştir. Tüm hakları saklıdır.
+This project was built during an internship period for portfolio, educational, and experimental purposes. All rights reserved.
