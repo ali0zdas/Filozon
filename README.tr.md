@@ -1,4 +1,9 @@
-# 🛒 Filozon - E-Ticaret & Bulut Depolama Uygulaması
+<p align="center">
+  <img src="assets/icons/logo.png" width="160" alt="Filozon Logo" />
+</p>
+
+<h1 align="center">🛒 Filozon</h1>
+<p align="center"><b>Modern E-Ticaret & Kişisel Bulut Depolama Platformu</b></p>
 
 <p align="center">
   <a href="README.md">🇬🇧 English</a> • 

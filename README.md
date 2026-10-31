@@ -1,4 +1,9 @@
-# 🛒 Filozon - E-Commerce & Cloud Storage
+<p align="center">
+  <img src="assets/icons/logo.png" width="160" alt="Filozon Logo" />
+</p>
+
+<h1 align="center">🛒 Filozon</h1>
+<p align="center"><b>Modern E-Commerce & Personal Cloud Storage Platform</b></p>
 
 <p align="center">
   <a href="README.md">🇬🇧 English</a> • 
