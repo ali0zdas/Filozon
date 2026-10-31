@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icons/logo.png" width="160" alt="Filozon Logo" />
+  <img src="assets/icons/logo.png" width="240" alt="Filozon Logo" />
 </p>
 
 <h1 align="center">🛒 Filozon</h1>
